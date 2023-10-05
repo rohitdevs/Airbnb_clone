@@ -1,12 +1,16 @@
-<!DOCTYPE html>
 <html>
-<head>
+  <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>House Details Page - EASY TUTORIALS</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Add Map</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
     <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
-</head>
-<body>
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <script type="module" src="./house.js"></script>
+  </head>
+  <body>
+    <!--The div element for the map -->
+    
+    
     <nav id="navBar" class="navbar-white">
         <a href="index.html">
             <img src="images/logo-red.png" class="logo">
@@ -20,8 +24,8 @@
         <a href="#" class="register-btn">Register Now</a>
         <i class="fas fa-bars" onclick="togglebtn()"></i>
     </nav>
-    <div class="house-details">
-        <div class="house-title">
+    <div id="house-detailsid" class="house-details">
+        <!-- <div class="house-title">
             <h1>Wenge House</h1>
             <div class="row">
                 <div>
@@ -85,8 +89,8 @@
 
         <p class="home-desc">Guests will be allocated on the ground floor according to availability. You get a comfortable Two bedroom apartment has a true city feeling. The price quoted is for two guest, at the guest slot please mark the number of guests to get the exact price for groups. The Guests will be allocated ground floor according to availability. You get the comfortable two bedroom apartment that has a true city feeling.</p>
         <hr class="line">
-
-        <div class="map">
+  
+        <div  class="map">
             <h3>Location on map</h3>
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d21221.676224044128!2d-122.45917885570059!3d37.75203368896406!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80859a6d00690021%3A0x4a501367f076adff!2sSan%20Francisco%2C%20CA%2C%20USA!5e0!3m2!1sen!2sin!4v1641145357317!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
             <b>San Francisco, California, United States</b>
@@ -108,8 +112,10 @@
                 </span>&nbsp; &nbsp; 245 reviews &nbsp; &nbsp; Response rate 100% &nbsp; &nbsp; Response time: 60 min</p>
             </div>
         </div>
-        <a href="#" class="contact-host">Contact Host</a>
+        <a href="#" class="contact-host">Contact Host</a> -->
     </div>
+
+  
     <div class="container">
         <div class="footer">
             <a href="https://facebook.com/"><i class="fab fa-facebook-f"></i></a>
@@ -121,12 +127,19 @@
             <p>Copyright © 2021, Easy Tutorials.</p>
         </div>
     </div>
-
     <script>
-        var navBar = document.getElementById("navBar");
-        function togglebtn(){
-            navBar.classList.toggle("hidemenu");
-        }
-    </script>
-</body>
+        (g=>{var h,a,k,p="The Google Maps JavaScript API",c="google",l="importLibrary",q="__ib__",m=document,b=window;b=b[c]||(b[c]={});var d=b.maps||(b.maps={}),r=new Set,e=new URLSearchParams,u=()=>h||(h=new Promise(async(f,n)=>{await (a=m.createElement("script"));e.set("libraries",[...r]+"");for(k in g)e.set(k.replace(/[A-Z]/g,t=>"_"+t[0].toLowerCase()),g[k]);e.set("callback",c+".maps."+q);a.src=`https://maps.${c}apis.com/maps/api/js?`+e;d[q]=f;a.onerror=()=>h=n(Error(p+" could not load."));a.nonce=m.querySelector("script[nonce]")?.nonce||"";m.head.append(a)}));d[l]?console.warn(p+" only loads once. Ignoring:",g):d[l]=(f,...n)=>r.add(f)&&u().then(()=>d[l](f,...n))})({
+          key: "AIzaSyBofCHZmE6v8n2hpms9enYnEcA-VI4-ehU",
+          v: "weekly",
+          // Use the 'v' parameter to indicate the version to use (weekly, beta, alpha, etc.).
+          // Add other bootstrap parameters as needed, using camel case.
+        });
+      </script>
+        <script>
+            var navBar = document.getElementById("navBar");
+            function togglebtn(){
+                navBar.classList.toggle("hidemenu");
+            }
+        </script>
+  </body>
 </html>
